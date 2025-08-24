@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAC - Électricité Générale & Solaire</title>
+    <style>
+        /* ======== RESET & BASE ======== */
+        * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+        body { line-height:1.6; color:#333; background-color:#f5f5f5; }
+
+        /* ======== HEADER ======== */
+        header { background:#ff9800; color:#fff; padding:20px 0; text-align:center; }
+        header h1 { margin-bottom:5px; }
+        nav a { color:#fff; text-decoration:none; margin: 0 15px; font-weight:bold; }
+        nav a:hover { text-decoration:underline; }
+
+        /* ======== HERO ======== */
+        .hero { background:url('https://images.unsplash.com/photo-1597454813542-6f90b33ee5f7?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat; height:400px; display:flex; justify-content:center; align-items:center; color:#fff; text-shadow:1px 1px 5px #000; }
+        .hero h2 { font-size:2.5rem; }
+
+        /* ======== SECTIONS ======== */
+        section { padding:50px 20px; max-width:1000px; margin:0 auto; }
+
+        h2 { text-align:center; margin-bottom:30px; color:#ff9800; }
+
+        .services, .gallery { display:flex; flex-wrap:wrap; justify-content:space-around; gap:20px; }
+        .service, .photo { background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); flex:1 1 250px; text-align:center; }
+
+        .service img, .photo img { max-width:100%; border-radius:10px; }
+
+        /* ======== CONTACT ======== */
+        .contact form { display:flex; flex-direction:column; gap:15px; max-width:500px; margin:0 auto; }
+        .contact input, .contact textarea { padding:10px; border-radius:5px; border:1px solid #ccc; }
+        .contact button { background:#ff9800; color:#fff; padding:10px; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
+        .contact button:hover { background:#e68a00; }
+
+        /* ======== FOOTER ======== */
+        footer { background:#333; color:#fff; text-align:center; padding:20px 0; margin-top:50px; }
+
+        /* ======== RESPONSIVE ======== */
+        @media(max-width:768px){
+            .services, .gallery { flex-direction:column; align-items:center; }
+        }
+
+        /* ======== WHATSAPP BUTTON ======== */
+        .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; border-radius:50%; width:60px; height:60px; display:flex; justify-content:center; align-items:center; font-size:30px; text-decoration:none; box-shadow:0 0 10px rgba(0,0,0,0.3); }
+        .whatsapp:hover { background:#1ebe5d; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>SAC</h1>
+        <p>Électricité Générale & Solaire</p>
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#about">À propos</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <h2>Fiable, Rapide et Proche de Vous</h2>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1581091215360-6a3e8f6c12f7?auto=format&fit=crop&w=500&q=80" alt="Électricité Générale">
+                <h3>Électricité Générale</h3>
+                <p>Dépannage, installation et entretien électrique de qualité.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1592595896557-187163f4cfd2?auto=format&fit=crop&w=500&q=80" alt="Énergie Solaire">
+                <h3>Énergie Solaire</h3>
+                <p>Installation et maintenance de panneaux solaires pour particuliers et entreprises.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1570720437001-2c86819e27ed?auto=format&fit=crop&w=500&q=80" alt="Montage Meubles">
+                <h3>Montage & Nettoyage</h3>
+                <p>Montage de meubles et nettoyage professionnel pour vos locaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>À propos de SAC</h2>
+        <p style="text-align:center; max-width:700px; margin:0 auto;">
+            SAC est votre partenaire de confiance pour tous vos besoins en électricité générale et solaire. 
+            Fort de notre expérience avec SGTD et FFDJ, nous garantissons des interventions rapides, sûres et professionnelles. 
+            Notre objectif : votre satisfaction totale.
+        </p>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <h2>Galerie de Réalisations</h2>
+        <div class="gallery">
+            <div class="photo"><img src="https://images.unsplash.com/photo-1598045291492-dc1d5b1eb308?auto=format&fit=crop&w=500&q=80" alt="Intervention 1"></div>
+            <div class="photo"><img src="https://images.unsplash.com/photo-1591563831221-67a68863f0c3?auto=format&fit=crop&w=500&q=80" alt="Intervention 2"></div>
+            <div class="photo"><img src="https://images.unsplash.com/photo-1581091215360-6a3e8f6c12f7?auto=format&fit=crop&w=500&q=80" alt="Intervention 3"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p style="text-align:center; margin-top:20px;">
+            📞 77164022 | ✉️ djihadsn27@gmail.com
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2025 SAC - Tous droits réservés
+    </footer>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/25777164022" class="whatsapp" target="_blank">💬</a>
+
+</body>
+</html>
